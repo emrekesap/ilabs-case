@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container">
+
+        <div class="box-container">
+            <div class="box-v1">
+                <button id="btnKasko" onclick="Function(this)" >Teklif Al</button>
+            </div>
+            <div class="box-v1">
+                <button id="btnTrafik" onclick="Function(this)" >Teklif Al</button>
+            </div>
+            <div class="box-v1">
+                <button id="btnSaglik" onclick="Function(this)" >Teklif Al</button>
+            </div>
+            <div class="box-v1">
+                <button id="btnDask" onclick="Function(this)" >Teklif Al</button>
+            </div>
+            <div class="box-v1">
+                <button id="btnCep" onclick="Function(this)" >Teklif Al</button>
+            </div>
+        </div>
+
+        <script>
+            var countKasko = 0;
+            var countTrafik = 0;
+            var countSaglik = 0;
+            var countDask = 0;
+            var countCep = 0;
+            function Function(ele) {
+                var btnValue = ele.id;
+                if(btnValue=="btnKasko"){
+                    countKasko++;
+                    alert("Kasko count: "+ countKasko);
+                }
+                else if(btnValue=="btnTrafik"){
+                    countTrafik++;
+                    alert("Trafik Sigortası count: "+ countTrafik);
+                }
+                else if(btnValue=="btnSaglik"){
+                    countSaglik++;
+                    alert("Trafik Sigortası count: "+ countSaglik);
+                }
+                else if(btnValue=="btnDask"){
+                    countDask++;
+                    alert("Trafik Sigortası count: "+ countDask);
+                }
+                else if(btnValue=="btnCep"){
+                    countCep++;
+                    alert("Trafik Sigortası count: "+ countCep);
+                }
+
+            }
+        </script>
+
+
+    </div><!--container-->
+</div><!--page-wrapper-->
+
+</body>
+</html>
